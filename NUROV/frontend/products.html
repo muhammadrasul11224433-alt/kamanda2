@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Маҳсулот — Business Commerce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="container products-layout">
+  <aside class="filters-panel card card-pad">
+    <h4>Ҷустуҷӯ</h4>
+    <div class="search-box">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="search-input" placeholder="Маҳсулотро ҷустуҷӯ кунед...">
+    </div>
+
+    <h4>Категорияҳо</h4>
+    <div id="category-list" style="display:flex;flex-direction:column;gap:6px;"></div>
+
+    <h4>Диапазони нарх (TJS)</h4>
+    <div class="price-range">
+      <input type="number" id="min-price" placeholder="Аз">
+      <input type="number" id="max-price" placeholder="То">
+    </div>
+    <button class="btn btn-outline-primary btn-block btn-sm" id="apply-filters" style="margin-top:14px;">Татбиқ кардан</button>
+    <button class="btn btn-ghost btn-block btn-sm" id="clear-filters" style="margin-top:8px;">Пок кардан</button>
+  </aside>
+
+  <section>
+    <div class="toolbar">
+      <div>
+        <h2 style="margin-bottom:2px;">Ҳамаи маҳсулот</h2>
+        <p style="margin:0;font-size:.9rem;" id="result-count">Боргирӣ...</p>
+      </div>
+      <select id="sort-select" style="padding:11px 16px;border-radius:var(--radius-pill);border:1.5px solid var(--border-strong);">
+        <option value="">Тартиби пешфарз</option>
+        <option value="price_asc">Нарх: арзон → гарон</option>
+        <option value="price_desc">Нарх: гарон → арзон</option>
+        <option value="rating">Баҳодиҳии баланд</option>
+      </select>
+    </div>
+
+    <div class="products-grid" id="products-grid"></div>
+    <div class="pagination" id="pagination"></div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>

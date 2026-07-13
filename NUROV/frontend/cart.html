@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сабад — Business Commerce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="container">
+  <h1 style="padding-top:32px;">Сабади хариди шумо</h1>
+  <div class="cart-layout">
+    <div class="card card-pad" id="cart-items-wrap">
+      <div class="skeleton" style="height:90px;margin-bottom:12px;"></div>
+      <div class="skeleton" style="height:90px;"></div>
+    </div>
+    <div class="card card-pad">
+      <h3>Ҷамъбаст</h3>
+      <div class="summary-row"><span>Маблағи маҳсулот</span><span id="sum-subtotal">0.00 TJS</span></div>
+      <div class="summary-row"><span>Интиқол</span><span>Ройгон</span></div>
+      <div class="summary-row total"><span>Ҳамагӣ</span><span id="sum-total">0.00 TJS</span></div>
+      <div class="field" style="margin-top:16px;">
+        <label for="shipping-address">Суроғаи интиқол</label>
+        <textarea id="shipping-address" rows="3" placeholder="Шаҳр, кӯча, хона..."></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkout-btn">Пардохт кардан (Checkout)</button>
+    </div>
+  </div>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

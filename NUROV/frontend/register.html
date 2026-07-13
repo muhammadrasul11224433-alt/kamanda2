@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сабти ном — Business Commerce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="eyebrow">Хуш омадед</div>
+    <h2>Ҳисоби нав созед</h2>
+    <p>Дар якчанд сония сабти ном кунед ва хариди худро оғоз кунед.</p>
+
+    <form id="register-form" novalidate style="margin-top:24px;">
+      <div class="field" id="f-name">
+        <label for="name">Ном</label>
+        <input type="text" id="name" placeholder="Исми пурраи шумо" required>
+        <div class="error">Лутфан номи худро ворид кунед.</div>
+      </div>
+      <div class="field" id="f-email">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <div class="error">Email-и дуруст ворид кунед.</div>
+      </div>
+      <div class="field" id="f-phone">
+        <label for="phone">Рақами телефон</label>
+        <input type="tel" id="phone" placeholder="+992 ХХ ХХХ ХХХХ">
+      </div>
+      <div class="field" id="f-password">
+        <label for="password">Парол</label>
+        <input type="password" id="password" placeholder="Ҳадди ақал 6 аломат" required>
+        <div class="error">Парол бояд ҳадди ақал 6 аломат бошад.</div>
+      </div>
+      <div class="field" id="f-confirm">
+        <label for="confirmPassword">Тасдиқи парол</label>
+        <input type="password" id="confirmPassword" placeholder="Паролро такрор кунед" required>
+        <div class="error">Паролҳо мувофиқат намекунанд.</div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Сабти ном</button>
+    </form>
+
+    <div class="auth-foot">Аллакай ҳисоб доред? <a href="login.html">Ворид шавед</a></div>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тафсилоти маҳсулот — Business Commerce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="container" id="pd-root">
+  <div class="pd-layout">
+    <div>
+      <div class="pd-gallery-main skeleton" id="pd-main-img" style="height:480px;"></div>
+      <div class="pd-thumbs" id="pd-thumbs"></div>
+    </div>
+    <div id="pd-info">
+      <div class="skeleton" style="height:28px;width:60%;margin-bottom:14px;"></div>
+      <div class="skeleton" style="height:44px;width:40%;margin-bottom:14px;"></div>
+      <div class="skeleton" style="height:100px;"></div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="desc">Тавсиф</button>
+    <button class="tab-btn" data-tab="reviews">Шарҳҳо</button>
+  </div>
+  <div class="tab-panel" id="tab-desc"></div>
+  <div class="tab-panel" id="tab-reviews" style="display:none;"></div>
+
+  <section style="margin-top:56px;">
+    <h2>Маҳсулоти монанд</h2>
+    <div class="products-grid" id="similar-grid" style="margin-top:20px;"></div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/product-details.js"></script>
+</body>
+</html>

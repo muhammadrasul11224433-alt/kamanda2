@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Воридшавӣ — Business Commerce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="eyebrow">Хуш омадед боз</div>
+    <h2>Ба ҳисоби худ ворид шавед</h2>
+    <p>Ҳисоби демо: admin@example.com / Admin1234</p>
+
+    <form id="login-form" novalidate style="margin-top:24px;">
+      <div class="field" id="f-email">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <div class="error">Email-и дуруст ворид кунед.</div>
+      </div>
+      <div class="field" id="f-password">
+        <label for="password">Парол</label>
+        <input type="password" id="password" placeholder="Пароли шумо" required>
+        <div class="error">Паролро ворид кунед.</div>
+      </div>
+      <div class="flex-between" style="margin-bottom:22px;">
+        <label class="checkbox-row"><input type="checkbox" id="remember"> Маро дар хотир нигоҳ дор</label>
+        <a href="#" id="forgot-link" style="font-size:.85rem;font-weight:600;color:var(--primary);">Паролро фаромӯш кардед?</a>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Воридшавӣ</button>
+    </form>
+
+    <div class="auth-foot">Ҳисоб надоред? <a href="register.html">Сабти ном кунед</a></div>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
